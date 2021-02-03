@@ -1,0 +1,3 @@
+[user]
+	email = weezy.chang@gmail.com
+	name = Jalian\ngit config list\ngit config --global user.name Jalian

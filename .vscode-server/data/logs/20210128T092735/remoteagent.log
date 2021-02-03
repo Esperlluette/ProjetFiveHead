@@ -1,0 +1,18 @@
+[2021-01-28 09:27:35.806] [remoteagent] [info] 
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+
+[2021-01-28 09:27:35.806] [remoteagent] [info] Extension host agent started.
+[2021-01-28 09:27:35.900] [remoteagent] [info] [127.0.0.1][3dbfdc54][ManagementConnection] New connection established.
+[2021-01-28 09:27:35.902] [remoteagent] [info] [127.0.0.1][36d004d6][ExtensionHostConnection] New connection established.
+[2021-01-28 09:27:35.944] [remoteagent] [info] [127.0.0.1][36d004d6][ExtensionHostConnection] <1828> Launched Extension Host Process.
+[2021-01-28 09:27:35.960] [remoteagent] [info] Listing 0 persistent terminals, 0 total terminals
+[2021-01-28 09:27:35.966] [remoteagent] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/var/www/html/symfony-8001/.vscode'
+[2021-01-28 09:27:37.181] [remoteagent] [error] [File Watcher (chokidar)] Inotify limit reached (ENOSPC)
+[2021-01-28 11:44:56.665] [remoteagent] [info] [127.0.0.1][3dbfdc54][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
