@@ -1,5 +1,36 @@
 {% extends "base.html.twig" %}
 
-{% block title %} {{ parent() }} Contact {% endblock %}
+{% block title %} {{ parent() }} Contact  {% endblock %}
 
-{% block contenu %} <h1> Page Contact </h1> {% endblock %} 
+{% block contenu %}
+    {% if form.valide is defined  %}
+        <h1> Email envoyé </h1>
+        <p> Votre nom est: {{form.nom}}<br/>
+            Votre prenom est: {{form.prenom}}<br/>
+            Votre email est: {{form.email}}<br/>
+        </p>
+
+    {% else %}
+<form  action="index.php?page=contact" method="post" enctype="application/x-www-formurlencoded" style="text-align: center;">
+         <legend>Prendre contact</legend>
+        <div class="form-group">
+            <label for="champNom">Nom</label>
+            <input type="text" class="form-control" id="champNom" name="champNom" aria-describedby="emailHelp" placeholder="Entrez votre nom">
+        </div>
+        <div class="form-group">
+            <label for="champPrenom">Prénom</label>
+            <input type="text" class="form-control" id="champPrenom" name="champPrenom" aria-describedby="emailHelp" placeholder="Entrez votre prénom">     
+        </div>
+        <div class="form-group">
+            <label for="champEmail">Adresse </label>
+            <input type="email" class="form-control" id="champEmail" name="champEmail" aria-describedby="emailHelp" placeholder="Entrer email">
+            <small id="emailHelp" class="form-text text-muted">Nous ne partagerons pas votre adresse Email</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleTextarea">Votre question</label>
+            <textarea class="form-control" id="champTexte" name="champTexte" rows="3"></textarea>
+        </div>
+        <button type="submit" name="btsubmit"  class="btn btn-primary">Envoyer</button>
+</form>    
+    {% endif %}  
+{% endblock %} 

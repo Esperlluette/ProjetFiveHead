@@ -2,4 +2,27 @@
 
 {% block title %} {{ parent() }} Accueil {% endblock %}
 
-{% block contenu %} <h1>Bienvenue sur SHOP- SHOP </h1> {% endblock %} 
+{% block contenujumbotron %}
+<div class="container">
+        <p class="lead" style="color: black;">Achetez vos pièces d'ordinateur ou des ordinateurs pré-montées </p>
+        <a href="#"><button type="button" class="btn btn-primary" style="margin: 2px;">Nos PC montées par nos proffessionnels</button></a>
+        <a href="http://s2.nuage-pedagogique.fr/symfony-8001/shopshop/public/index.php?page=contact"><button type="button" class="btn btn-primary" style="margin: 2px;">Contact</button></a>
+        <a href="https://www.paypal.com/paypalme/dukeYuuki"><button type="button" class="btn btn-primary" style="margin: 2px;">Donations</button></a>
+        <a href="https://onlyfans.com/curlingue"><button type="button" class="btn btn-primary" style="margin: 2px;">Mon onlyfans</button></a>
+        <a href="https://www.twitch.tv/esperlluette"><button type="button" class="btn btn-primary" style="margin: 2px;">Mon twitch.tv</button></a>
+        <a href="https://youtu.be/DAjmYfIU7JE"><button type="button" class="btn btn-primary" style="margin: 2px;">get sick bugged</button></a>
+      </div>
+      
+
+     
+      
+{% endblock %} 
+{% block contenu %}
+ <div style="padding-left: 2cm;padding-right: 2cm;padding-top: 8cm;">
+      <fieldset class="form-group">
+        <legend>Votre humeur </legend>
+        <input type="range" class="custom-range" id="customRange1" >
+      </fieldset>
+    </div>
+
+  {% endblock %}

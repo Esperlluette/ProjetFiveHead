@@ -5,14 +5,72 @@
       <meta charset="utf-8">    
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css" >  
-      <title>{% block title %}SHOP-SHOP - {% endblock %}</title>  
+      <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css" >
+      <link rel="stylesheet" href="css/Style.css">  
+      <title>{% block title %}Five Head {% endblock %}</title>  
     </head>  
       
-    <body>   
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="http://s2.nuage-pedagogique.fr/symfony-8001/shopshop/public/index.php?page=accueil">Five head</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://s2.nuage-pedagogique.fr/symfony-8001/shopshop/public/index.php?page=accueil">Processeurs</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">refroidissement</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="http://s2.nuage-pedagogique.fr/symfony-8001/shopshop/public/index.php?page=accueil">Ventirad</a>
+                <a clanamess="dropdown-item" href="http://s2.nuage-pedagogique.fr/symfony-8001/shopshop/public/index.php?page=accueil">Water-cooling</a>
+              </div>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://s2.nuage-pedagogique.fr/symfony-8001/shopshop/public/index.php?page=accueil">Cartes Graphiques</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://s2.nuage-pedagogique.fr/symfony-8001/shopshop/public/index.php?page=accueil">Cartes mères</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://s2.nuage-pedagogique.fr/symfony-8001/shopshop/public/index.php?page=accueil">RAM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://s2.nuage-pedagogique.fr/symfony-8001/shopshop/public/index.php?page=accueil">Disques durs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://s2.nuage-pedagogique.fr/symfony-8001/shopshop/public/index.php?page=accueil">Alimentations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://s2.nuage-pedagogique.fr/symfony-8001/shopshop/public/index.php?page=accueil">Boitiers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://s2.nuage-pedagogique.fr/symfony-8001/shopshop/public/index.php?page=accueil">Kits leds RBG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://s2.nuage-pedagogique.fr/symfony-8001/shopshop/public/index.php?page=inscription" style="text-align: right;">Inscription</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://s2.nuage-pedagogique.fr/symfony-8001/shopshop/public/index.php?page=connection" style="text-align: right;">Connection</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://s2.nuage-pedagogique.fr/symfony-8001/shopshop/public/index.php?page=contact" style="text-align: right;">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid" style="height: 9cm;">
+      <div class="container">
+        <h1 class="display-4">Five head</h1>
+        {% block contenujumbotron %}  {% endblock %}
+      </div>
+    </div>
+  
     
     {% block contenu %}{% endblock %}  
-    
+    {% block contenuContact %}{% endblock %} 
+
       <!-- Optional JavaScript -->    
       <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>    
